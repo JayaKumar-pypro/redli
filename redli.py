@@ -66,7 +66,7 @@ class redli:
 if __name__=='__main__':
     intro = name_ban()
     intro.banner()
-    if len(sys.argv) <= 2:
+    if len(sys.argv) == 2:
         if sys.argv[1] == '--help' or sys.argv[1] == '-h':
             intro.help()
         elif sys.argv[1] == '--track' or sys.argv[1] == '-t':
