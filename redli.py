@@ -4,7 +4,7 @@ from colorama import Fore, Back, Style
 
 class name_ban:
     def banner(self):
-        c = Fore.GREEN
+        c = Fore.WHITE
         print(c + " ██▀███  ▓█████ ░█████▄  ██░    ░██░ ")
         print(c + "░██ ░ ██ ▓█   ▀ ░██▀ ██▌░██░  ░ ░██░ ")
         print(c + "░██ ░▄█  ▒███   ░██   ▒▌░██░  ░ ░██░ ")
@@ -12,7 +12,7 @@ class name_ban:
         print(c + "░██▓ ▒██░░█████▒░▒████▓ ░██████▒░██░ ")
         print(c + "░ ▒▓ ░▒▓░░░ ▒░ ░ ▒░░  ▒ ░ ▒░▓  ░░▓   ")
         print(c + "  ░▒ ░ ▒░ ░ ░  ░   ▒  ▒   ░ ▒  ░ ▒ ░ ")
-        print(c + "░ ▒░ 𝙅𝙏𝙀𝘾𝙃𝘾𝙊𝘿𝙀 2.𝐎 ▒ 𝙅𝘼𝙔𝘼𝙆𝙐𝙈𝘼𝙍 ▒ ▒ ▒ ")
+        print(c + "░𝙅𝙏𝙀𝘾𝙃𝘾𝙊𝘿𝙀 2.𝐎 ▒ 𝙅𝘼𝙔𝘼𝙆𝙐𝙈𝘼𝙍 ▒ ")
         print(c + "▒  ░  ▒   ░ ▒  ░   ▒  ▒     ▒    ░ ░  ")
         print(c + "    TRACKING THE END FACE OF URLs\n   ")
 
@@ -52,12 +52,12 @@ class redli:
                 print(Fore.RED + 'Here the following redirected chain...\n')
                 for r in resp.history:
                     print(Fore.RED + '|', r.status_code, '|', r.url, '|', r.reason)
-                print(Fore.GREEN + '\nEND URL :', resp.url)
-                print(Fore.GREEN + 'Status Code :', resp.status_code, resp.reason)
+                print(Fore.WHITE + '\nEND URL :', resp.url)
+                print(Fore.WHITE + 'Status Code :', resp.status_code, resp.reason)
             else:
-                print('\nURL is Not Redirected or Shorten!')
-                print('END URL :', resp.url)
-                print('Status Code :',resp.status_code, resp.reason)
+                print(Fore.WHITE + '\nURL is Not Redirected or Shorten!')
+                print(Fore.WHITE + 'END URL :', resp.url)
+                print(Fore.WHITE + 'Status Code :',resp.status_code, resp.reason)
         except BaseException as be:
             print(Fore.RED + 'Tracking Failed! Check URL')
             print(be)
