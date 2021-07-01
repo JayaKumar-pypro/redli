@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REDLI TRACKING</title>
+</head>
+<body><center>
+<h2> Tracking the END URL</h2>
+    <img src="{{ url_for('static', filename='redli.JPG') }}" width="300" height="250">
+<h4>Yes URL is Redirected or Shorten!</h4>
+<h4>END URL : <a href="{{ endurl.url }}">{{ endurl.url }}</a> </h4>
+<h4>Status Code : {{ endurl.status_code }}</h4>
+<h2>Here the following redirected chain...</h2>
+<table border="1">
+    <thead>
+    <tr><td>Status Code</td><td>URL</td><td>Reason</td></tr>
+    </thead>
+    <tbody>
+    {% for r in redirect %}
+    <tr><td>{{ r.status_code }}</td><td>{{ r.url }}</td><td>{{ r.reason }}</td></tr>
+    {% endfor %}
+    </tbody>
+</table><br>
+<button><a href="/">GO TO HOME</a> </button></center>
+</body>
+</html>

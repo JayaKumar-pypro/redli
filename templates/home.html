@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REDLI WEBAPP</title>
+</head>
+<center> <h3>Tracking The END Face of URLs</h3>
+<img src="{{ url_for('static', filename='redli.JPG') }}" width="300" height="250">
+<p>Have you ever wondered: Where does this link go? The REDLI Tool follows <br>
+    the path of the URL. It allows you to see the complete path a redirected<br>
+    URL goes through. It will show you the full redirection path of URLs, shortened links, or tiny URLs.</p>
+<form action="/track" method="post">
+    <p>Enter URL</p><input type="url" name="user_url" placeholder="Enter URL">
+    <input type="submit" value="TRACK">
+    <button><a href="/helpline">HELPLINE</a></button>
+</form>
+
+</center>
+</body>
+</html>
