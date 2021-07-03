@@ -17,4 +17,5 @@ Python 3, requests and colorama libraries.
 ```
 ### About
 <p>Coded by: JAYAKUMAR of JTECHCODE 2.O</p>
-<p>Subscribe YouTube : https://www.youtube.com/channel/UC_2ln7CZ7XjSpGDMgzsBjQA</p>
+<p>Subscribe YouTube : https://www.youtube.com/c/JTECHCODE2O</p>
+<p>Follow on Instagram : https://www.instagram.com/jtechcode</p>
